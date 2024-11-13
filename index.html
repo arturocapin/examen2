@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a class="logo" href="#">Menu</a>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Cuenta</a></li>
+                </ul>
+                <i class="gg-menu" onclick="showMenu()"></i>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Gestor de Tareas</h1>
+        <input type="text" id="taskInput" placeholder="Nueva tarea">
+        <select id="priorityInput">
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+        <button type="button" onclick="addTask()">Agregar tarea</button>
+        <div class="main-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
